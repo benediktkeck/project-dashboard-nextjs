@@ -20,7 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="de" suppressHydrationWarning>
         <body
-            className={`${karla.className} antialiased min-h-screen bg-light dark:bg-background text-dark dark:text-white`}
+            className={`${karla.className} antialiased min-h-screen bg-white text-black`}
         >
         <div>{children}</div>
         </body>

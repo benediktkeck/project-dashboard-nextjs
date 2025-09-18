@@ -2,5 +2,8 @@
 
 @theme {
     --color-white: #ffffff;
-    --color-black: #010101;
+    --color-black: #191A1C;
+    --color-primary: #3573F0;
+    --color-background: #26282B;
+    --color-base: #DCE0E4;
 }

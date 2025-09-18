@@ -1,10 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Inter } from "next/font/google";
+import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
-const karla = Karla({
-    variable: "--font-karla",
+const inter = Inter({
+    variable: "--font-inter",
     subsets: ["latin"],
 });
 
@@ -20,9 +21,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="de" suppressHydrationWarning>
         <body
-            className={`${karla.className} antialiased min-h-screen bg-background text-base`}
+            className={`${inter.className} antialiased min-h-screen bg-background text-base`}
         >
-        <div>{children}</div>
+        <div className={"min-h-screen h-full md:pl-80 md:m-5 md:ml-10"}>
+            <Sidebar />
+            {children}
+        </div>
         </body>
         </html>
     );
